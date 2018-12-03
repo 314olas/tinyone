@@ -1,0 +1,32 @@
+header {
+	padding: 50px 0;
+	background: $custom-base-yellow;
+	
+	.nav {
+		text-align: center;
+		
+		li {
+			border-bottom: 1px solid $custom-base-black;
+			
+			@media (min-width: 768px){
+				border-bottom: none;
+			}
+		}
+
+	}
+
+	.navbar {
+		margin-bottom: 0;
+	}
+}
+
+.logo-holder {
+	text-align: center;
+	
+	img {
+		height: auto;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
