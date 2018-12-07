@@ -1,0 +1,76 @@
+input {
+	outline: none;
+}
+
+h3	{
+	margin-top: 0;
+}
+
+[class*=" icon-"], [class^=icon-] {
+		font-size: 40px;
+		color: $gray-base;
+		
+		&:hover {
+			color:$custom-base-white;
+		}
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.common-section {
+	padding: 100px 0;
+}
+
+.bg-wrapper {	
+	background: $brand-primary;
+}
+
+
+.title-holder {
+	text-align: center;
+}
+
+.text-align-left {
+	@media (min-width: 768px){
+		text-align: left;
+	}
+}
+
+.lead {
+	text-align: center;
+	color: #313841;
+}
+
+main {
+	
+}
+
+.feature-head {
+	padding: 25px 0;
+}
+
+.flex-wrap {
+	display: flex;
+	flex-direction: column;
+	padding: 15px 0;
+	
+	@media (min-width: 768px){
+		flex-direction: row;
+	}
+}
+
+
+.icon-holder{
+	text-align: center;
+	flex-basis: 40px;
+	padding-bottom: 10px;
+	
+	@media (min-width: 768px){
+		padding-right: 15px;
+	}
+}
+.content-holder {
+	flex-grow: 1;
+}

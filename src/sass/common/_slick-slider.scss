@@ -1,0 +1,75 @@
+
+
+.slide-item.slick-slide.slick-current.slick-active:focus{
+	outline: none;
+}
+
+.slide-item.slick-slide:focus {
+	outline: none;
+}
+
+
+.slider-holder {
+
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	
+
+	.slick-active {
+	
+		&:before {
+			background-color: $custom-base-white;
+		}
+	}
+
+	li {
+		list-style: none;
+		padding: 0 15px;
+		position: relative;
+		
+
+		&:before {
+			content: "";
+			display: inline-block;
+			vertical-align: top;
+			width: 15px;
+			height: 15px;
+			border: 1px solid transparent;
+			border-radius: 50%;
+			position: absolute;
+			background-color: #feed80;
+			transition: .3s background-color;
+		}
+
+		&:hover,
+		.slick-active {
+
+
+			&:before {
+				background-color: $custom-base-white;
+			}
+		}		
+
+
+		button {
+			display: none;
+		}
+	}
+}
+
+.slide-item {
+
+	p{
+		color: #555;
+		text-align: center;
+		
+		@media (min-width: 768px){
+			text-align: left;
+		}
+	}
+}
+

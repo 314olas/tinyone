@@ -1,8 +1,33 @@
 
-$gray-dark: $custom-base-black;
+$gray-base: $custom-base-black;
 
 //primary color
 $brand-primary: $custom-base-yellow;
+
+$gray-light: $custom-base-grey-lighter;
+
+
+//** Global text color on `<body>`.
+$text-color: $gray-base;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.7;
+
+//font-weight
+$headings-font-weight: bold;
+
+$font-size-base: 16px;
+
+//h3
+$font-size-h3: 22px;
+
+//** Link hover decoration.
+$link-hover-decoration: none;
+
+
+//** Link hover color set via `darken()` function.
+$link-hover-color:  darken($custom-base-white, 25%);
+
 
 //navbar
 $navbar-default-color: $custom-base-black;
@@ -18,3 +43,24 @@ $nav-link-padding: 10px 25px;
 $navbar-default-toggle-hover-bg: transparent;
 $navbar-default-toggle-icon-bar-bg: $custom-base-black;
 $navbar-default-toggle-border-color: $custom-base-black;
+
+
+//btn 
+$btn-primary-color: $gray-base;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: transparent;
+
+//** Text color for `<input>`s
+$input-color: $gray-light;
+
+$input-bg: $custom-base-white;
+
+//** `<input>` border color
+$input-border: transparent;
+
+//** Placeholder text color
+$input-color-placeholder: $gray-light;
+
+//** Border color for inputs on focus
+$input-border-focus: transparent;
+

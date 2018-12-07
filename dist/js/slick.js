@@ -1,9 +1,8 @@
 $(document).ready(function(){
   $('.slider-holder').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
+  	arrows: false,
+  	dots: true,
+  	mobileFirst: true
+	});
 });
-});
+

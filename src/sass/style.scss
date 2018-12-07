@@ -1,11 +1,15 @@
 @import "common/reset";
+
 @import "common/variebles";
-//@import "layout/variebles";
+@import "assets/stylesheets/bootstrap";
+@import "assets/stylesheets/bootstrap-custom";
+
+@import "common/fonts";
+@import "common/slick-slider";
 @import "layout/main";
 @import "layout/header";
 @import "layout/footer";
 
 
-@import "assets/stylesheets/bootstrap";
-@import "assets/stylesheets/bootstrap-custom";
+
 

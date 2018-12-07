@@ -1,6 +1,8 @@
+
+
 header {
-	padding: 50px 0;
-	background: $custom-base-yellow;
+	
+
 	
 	.nav {
 		text-align: center;
@@ -15,9 +17,47 @@ header {
 
 	}
 
-	.navbar {
-		margin-bottom: 0;
+	.navbar {		
+
+		@media (min-width: 768px){
+			.navbar-nav {
+    			float: right;
+			}
+		}
+
+		a {
+			font-weight: bold;
+		}
+
+		&-brand {
+			padding: 0;
+		}
 	}
+
+}
+
+.bg-wrapper {
+	padding: 40px 0 60px;
+}
+
+
+.social-icon-link {
+	text-align: center;
+	padding: 30px 0;
+	
+	@media (min-width: 768px){
+		text-align: left
+	}
+		
+	a {
+		padding: 0 15px;
+		
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+	
+	
 }
 
 .logo-holder {
@@ -27,6 +67,17 @@ header {
 		height: auto;
 		display: inline-block;
 		vertical-align: top;
+	}
+}
+
+
+.img-holder {	
+	text-align: center;
+	padding-bottom: 20px;
+	
+	img {
+		margin: 0 auto;
+		
 	}
 }
 
