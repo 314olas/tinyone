@@ -48,13 +48,13 @@ main {
 }
 
 .feature-head {
-	padding: 25px 0;
+	padding-bottom: 70px;
 }
 
-.flex-wrap {
+.flex-wrapper {
 	display: flex;
 	flex-direction: column;
-	padding: 15px 0;
+	padding-bottom: 70px;
 	
 	@media (min-width: 768px){
 		flex-direction: row;

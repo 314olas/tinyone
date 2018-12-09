@@ -7033,6 +7033,10 @@ button.close {
   }
 }
 
+.slide-title-holder {
+  padding-top: 70px;
+}
+
 input {
   outline: none;
 }
@@ -7080,10 +7084,10 @@ h3 {
 }
 
 .feature-head {
-  padding: 25px 0;
+  padding-bottom: 70px;
 }
 
-.flex-wrap {
+.flex-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7091,11 +7095,11 @@ h3 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 15px 0;
+  padding-bottom: 70px;
 }
 
 @media (min-width: 768px) {
-  .flex-wrap {
+  .flex-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -7218,8 +7222,14 @@ footer a {
   text-align: center;
 }
 
-.form-inline {
+.form-holder {
   padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .links-holder {
@@ -7247,6 +7257,10 @@ footer a {
   margin-right: 35px;
 }
 
+.link-item:last-child {
+  margin-right: 0;
+}
+
 .footer-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7264,6 +7278,10 @@ footer a {
 .info-item address {
   color: #fff;
   margin: 0;
+}
+
+.info-item a:hover {
+  color: #fcdb00;
 }
 
 

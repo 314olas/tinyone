@@ -26,8 +26,11 @@ footer {
 
 }
 
-.form-inline {
+.form-holder {
 	padding-bottom: 60px;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
 }
 
 .links-holder{
@@ -46,6 +49,10 @@ footer {
 	width: 35px;
 	height: 35px;
 	margin-right: 35px;
+	
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 
@@ -65,6 +72,10 @@ footer {
 	address {
 		color: $custom-base-white;
 		margin: 0;
+	}
+
+	a:hover {
+		color: $brand-primary;
 	}
 	
 }
