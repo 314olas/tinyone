@@ -28,15 +28,43 @@ footer {
 
 .form-holder {
 	padding-bottom: 60px;
-	display: flex;
-	-webkit-justify-content: center;
-	        justify-content: center;
+	
+	.form-inline {
+		display: flex;
+		flex-direction: column;		
+    	align-items: center;
+    	width: 100%;
+    	
+    	@media (min-width: 768px){
+				flex-direction: row;
+			}
+	}
+
+	.form-group {
+		flex-grow: 1;
+		align-self: stretch;
+		
+		@media (min-width: 768px){
+			margin-right: 15px;
+		}
+				
+		
+		input {
+			padding: 26px 20px;
+			
+			@media (min-width: 768px){
+				width: 100%;
+		}
+	}
+	}
+
 }
+
+
 
 .links-holder{
 	display: flex;
-	-webkit-justify-content: center;
-	        justify-content: center;
+	justify-content: center;
 	padding-bottom: 100px;
 }
 
@@ -64,9 +92,12 @@ footer {
 }
 
 .info-item {
-
-	ul {
-		max-width: 200px;
+	padding-bottom: 35px;
+	text-align: center;
+	
+	
+	@media (min-width: 768px){
+		text-align: left;
 	}
 
 	address {
@@ -74,8 +105,26 @@ footer {
 		margin: 0;
 	}
 
-	a:hover {
-		color: $brand-primary;
+	a {
+		display: block;
+		transition: .3s color;
+		
+		
+		&:hover {
+			color: $brand-primary;
+		}
 	}
 	
+}
+
+.text-align-right {
+	text-align: right;
+	
+	@media (min-width: 768px){
+		text-align: left;
+	}
+}
+
+.text-align-left {
+	text-align: left;
 }
