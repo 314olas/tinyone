@@ -3,13 +3,8 @@ footer {
 	
 
 	[class*=" icon-"], [class^=icon-]{
-		font-size: 32px;
+		font-size: 29px;
 	}
-
-	a {
-		color: $custom-base-white;
-	}
-	
 }
 
 .footer-title {
@@ -54,8 +49,12 @@ footer {
 			
 			@media (min-width: 768px){
 				width: 100%;
+			}
 		}
-	}
+		button {
+			flex-shrink: 0;
+		}
+
 	}
 
 }
@@ -66,6 +65,10 @@ footer {
 	display: flex;
 	justify-content: center;
 	padding-bottom: 100px;
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 0;
+
 }
 
 .link-item {
@@ -80,6 +83,14 @@ footer {
 	
 	&:last-child {
 		margin-right: 0;
+	}
+
+	a {
+		padding: 4px 0;
+
+		&:hover > span {
+			color: $custom-base-white;
+		}
 	}
 }
 
@@ -107,6 +118,7 @@ footer {
 
 	a {
 		display: block;
+		color: $custom-base-white;
 		transition: .3s color;
 		
 		

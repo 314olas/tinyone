@@ -10,11 +10,9 @@ h3	{
 		font-size: 40px;
 		color: $gray-base;
 		transition: .3s color;
-		
-		&:hover {
-			color:$custom-base-white;
-		}
+
 }
+
 
 .wrapper {
 	overflow: hidden;
@@ -79,4 +77,9 @@ article {
 
 .content-holder {
 	flex-grow: 1;
+
+	p {
+		color: $gray-light;
+	}
+	
 }

@@ -6768,6 +6768,21 @@ button.close {
   flex-wrap: wrap;
 }
 
+.slider .flex-holder img {
+  margin: 0 auto;
+}
+
+.slider [class*=" icon-"]:hover,
+.slider [class^=icon-]:hover {
+  color: #fff;
+}
+
+.slider .img-holder {
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
 .slick-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6824,21 +6839,27 @@ button.close {
 
 .social-icon-link {
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0 -15px;
 }
 
 @media (min-width: 768px) {
   .social-icon-link {
-    text-align: left;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
   }
 }
 
-.social-icon-link a {
+.social-icon-link li {
   padding: 0 15px;
-}
-
-.social-icon-link a:first-child {
-  padding-left: 0;
 }
 
 input {
@@ -6855,11 +6876,6 @@ h3 {
   color: #010101;
   -webkit-transition: .3s color;
   transition: .3s color;
-}
-
-[class*=" icon-"]:hover,
-[class^=icon-]:hover {
-  color: #fff;
 }
 
 .wrapper {
@@ -6934,6 +6950,10 @@ h3 {
   flex-grow: 1;
 }
 
+.content-holder p {
+  color: #898989;
+}
+
 header .nav {
   text-align: center;
 }
@@ -6966,26 +6986,13 @@ header .navbar-brand {
   text-align: center;
 }
 
-.img-holder {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.img-holder img {
-  margin: 0 auto;
-}
-
 footer {
   background: #010101;
 }
 
 footer [class*=" icon-"],
 footer [class^=icon-] {
-  font-size: 32px;
-}
-
-footer a {
-  color: #fff;
+  font-size: 29px;
 }
 
 .footer-title {
@@ -7052,6 +7059,11 @@ footer a {
   }
 }
 
+.form-holder .form-group button {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
 .links-holder {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7060,6 +7072,9 @@ footer a {
   -ms-flex-pack: center;
   justify-content: center;
   padding-bottom: 100px;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
 }
 
 .link-item {
@@ -7079,6 +7094,14 @@ footer a {
 
 .link-item:last-child {
   margin-right: 0;
+}
+
+.link-item a {
+  padding: 4px 0;
+}
+
+.link-item a:hover > span {
+  color: #fff;
 }
 
 .footer-info {
@@ -7109,6 +7132,7 @@ footer a {
 
 .info-item a {
   display: block;
+  color: #fff;
   -webkit-transition: .3s color;
   transition: .3s color;
 }
